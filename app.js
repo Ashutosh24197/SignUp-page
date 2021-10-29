@@ -13,6 +13,7 @@ app.get("/",function(req,res){
 });
 
 app.post("/",function(req ,res){
+  // main router where all the request come
   var firstname=req.body.fname;
   var lastname=req.body.lname;
   var email=req.body.email;
