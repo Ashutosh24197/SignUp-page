@@ -13,6 +13,7 @@ app.get("/",function(req,res){
 });
 
 app.post("/",function(req ,res){
+  //main functin
   var firstname=req.body.fname;
   var lastname=req.body.lname;
   var email=req.body.email;
@@ -56,11 +57,13 @@ app.post("/",function(req ,res){
 });
 
 app.post("/failure",function(req,res){
+  //failure code
   res.redirect("/");
 });
 
 app.listen(process.env.PORT || 3000,function(){
   console.log("server is runnig on port 3000");
+  console.log("hii this is femo");
 });
 
 
